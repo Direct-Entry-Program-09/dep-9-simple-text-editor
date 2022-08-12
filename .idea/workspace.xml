@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae299192-5c67-4546-8e77-006bdb3e6bc0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Asset/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asset/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asset/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asset/img_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asset/img_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asset/img_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/A Simple TEXT EDitor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cute-loading.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SplashNew2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SplashNew2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SplashNewFormController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/index.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/preloader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/About.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/About.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/SplashForm2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/SplashForm2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/SplashNewForm.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +67,7 @@
       <workItem from="1658299832403" duration="611000" />
       <workItem from="1658321297896" duration="705000" />
       <workItem from="1660130619436" duration="13941000" />
-      <workItem from="1660321193036" duration="1289000" />
+      <workItem from="1660321193036" duration="1634000" />
     </task>
     <servers />
   </component>
