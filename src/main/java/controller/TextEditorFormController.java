@@ -1,19 +1,28 @@
 package controller;
 
 import javafx.application.Platform;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.web.HTMLEditor;
+import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Optional;
 
 public class TextEditorFormController {
     public MenuBar mnuBar;
@@ -68,7 +77,26 @@ public class TextEditorFormController {
     public void mnuNewOnAction(ActionEvent actionEvent) {
     }
 
-    public void mnuOpenOnAction(ActionEvent actionEvent) {
+    public void mnuOpenOnAction(ActionEvent actionEvent) throws IOException {
+        FileChooser fileChooser=new FileChooser();
+       fileChooser.setTitle("Open a File");
+        File file = fileChooser.showOpenDialog(null);
+
+        if (file!=null){
+            Path path = Paths.get(file.getAbsolutePath());
+            byte[] bytes = Files.readAllBytes(path);
+            txtEditor.setHtmlText(new String(bytes));
+        }else {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Do you want to select path again ?", ButtonType.YES, ButtonType.NO);
+            alert.setTitle("Open Path Confirmation");
+            Optional<ButtonType> buttonType=alert.showAndWait();
+            if (buttonType.get().equals(ButtonType.YES)){
+                mnuOpenOnAction(new ActionEvent());
+            }else {
+                return;
+            }
+
+        }
     }
 
     public void mnuSaveOnAction(ActionEvent actionEvent) {
