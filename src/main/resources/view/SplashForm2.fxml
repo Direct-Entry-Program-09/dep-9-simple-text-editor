@@ -10,13 +10,8 @@
    <children>
       <ImageView fitHeight="283.0" fitWidth="270.0" layoutX="20.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="/loading_icon.gif" />
+            <Image url="/images/cute-loading.gif" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="331.0" layoutY="94.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgba(0,0,0,1);">
-         <children>
-            <Label fx:id="lblLoading" layoutX="84.0" layoutY="72.0" text="Loading ...." />
-         </children>
-      </AnchorPane>
    </children>
 </AnchorPane>

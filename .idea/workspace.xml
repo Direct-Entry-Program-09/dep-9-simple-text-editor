@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae299192-5c67-4546-8e77-006bdb3e6bc0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Asset/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asset/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asset/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asset/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asset/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asset/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/A Simple TEXT EDitor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cute-loading.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SplashNew2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SplashNew2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SplashNewFormController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/index.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/preloader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/About.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/About.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/SplashForm2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/SplashForm2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/SplashNewForm.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,17 +49,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/rashmi/Documents/dep-9/newphase-1/java-fx3/java-fx-demo5",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rashmi/Documents/dep-9/newphase-1/java-fx3/java-fx-demo5/src/main/resources/images&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
@@ -65,7 +82,8 @@
       <workItem from="1658192602534" duration="1393000" />
       <workItem from="1658299832403" duration="611000" />
       <workItem from="1658321297896" duration="705000" />
-      <workItem from="1660130619436" duration="11331000" />
+      <workItem from="1660130619436" duration="13941000" />
+      <workItem from="1660321193036" duration="1289000" />
     </task>
     <servers />
   </component>
