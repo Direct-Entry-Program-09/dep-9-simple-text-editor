@@ -123,7 +123,26 @@ public class TextEditorFormController {
         }
     }
 
-    public void mnuSaveOnAction(ActionEvent actionEvent) {
+    public void mnuSaveOnAction(ActionEvent actionEvent) throws IOException {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Save file");
+        File file = fileChooser.showSaveDialog(null);
+
+        if (file!=null){
+            Path path = Paths.get(file.getAbsolutePath());
+            String htmlText = txtEditor.getHtmlText();
+            byte[] bytes = htmlText.getBytes();
+            Files.write(path,bytes);
+        }else {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Do you want to reselect the path ?", ButtonType.YES, ButtonType.NO);
+            alert.setTitle("Save path confirmation");
+            Optional<ButtonType> btnType=alert.showAndWait();
+            if (btnType.get().equals(ButtonType.YES)){
+                mnuSaveOnAction(new ActionEvent());
+            }else {
+                return;
+            }
+        }
     }
 
     public void mnuPrintOnAction(ActionEvent actionEvent) {
@@ -134,7 +153,7 @@ public class TextEditorFormController {
         if (txtEditor.getHtmlText().isEmpty()){
             stage.close();
         }else {
-            mnuSaveOnAction(new ActionEvent());
+            mnuCloseOnAction(new ActionEvent());
         }
     }
 
