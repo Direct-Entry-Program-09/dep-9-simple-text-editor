@@ -11,6 +11,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.web.HTMLEditor;
 import javafx.stage.FileChooser;
@@ -128,17 +130,36 @@ public class TextEditorFormController {
     }
 
     public void mnuCloseOnAction(ActionEvent actionEvent) {
+        Stage stage= (Stage) pneMain.getScene().getWindow();
+        if (txtEditor.getHtmlText().isEmpty()){
+            stage.close();
+        }else {
+            mnuSaveOnAction(new ActionEvent());
+        }
     }
 
     public void mnuCutOnAction(ActionEvent actionEvent) {
+        setSelectedText();
+        txtEditor.setHtmlText(txtEditor.getHtmlText().replace(txtEditor.getHtmlText()," "));
+
+    }
+    private void setSelectedText(){
+        Clipboard systemClipboard = Clipboard.getSystemClipboard();
+        ClipboardContent clipboardContent = new ClipboardContent();
+        clipboardContent.putString(txtEditor.getHtmlText());
+        systemClipboard.setContent(clipboardContent);
     }
 
     public void mnuCopyOnAction(ActionEvent actionEvent) {
+        setSelectedText();
     }
 
     public void mnuPasteOnAction(ActionEvent actionEvent) {
+        Clipboard systemClipboard = Clipboard.getSystemClipboard();
+        String string = systemClipboard.getString();
     }
 
     public void mnuSelectAllOnAction(ActionEvent actionEvent) {
+
     }
 }
