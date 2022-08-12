@@ -11,10 +11,12 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.web.HTMLEditor;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 import java.io.File;
 import java.io.IOException;
@@ -37,8 +39,11 @@ public class TextEditorFormController {
     public MenuItem mnuSelectAll;
     public MenuItem mnuAbout;
     public HTMLEditor txtEditor;
+    public AnchorPane pneMain;
 
     public void initialize(){
+
+
 
 
         mnuNew.setOnAction(new EventHandler<ActionEvent>() {
@@ -74,7 +79,24 @@ public class TextEditorFormController {
 
     }
 
-    public void mnuNewOnAction(ActionEvent actionEvent) {
+    public void mnuNewOnAction(ActionEvent actionEvent) throws IOException {
+        if (txtEditor.getHtmlText().isEmpty()){
+            loadNewWindow();
+        }else {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Do you want to save this file ?", ButtonType.YES, ButtonType.NO);
+            Optional<ButtonType> buttonType = alert.showAndWait();
+            if (buttonType.get().equals(ButtonType.YES)){
+                mnuSaveOnAction(new ActionEvent());
+            }else {
+                loadNewWindow();
+            }
+        }
+    }
+    private void loadNewWindow() throws IOException {
+        Stage stage = (Stage) pneMain.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/TextEditorForm.fxml"))));
+        stage.show();
+
     }
 
     public void mnuOpenOnAction(ActionEvent actionEvent) throws IOException {
