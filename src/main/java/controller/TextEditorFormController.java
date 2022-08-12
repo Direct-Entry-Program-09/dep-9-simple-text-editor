@@ -31,6 +31,7 @@ public class TextEditorFormController {
 
     public void initialize(){
 
+
         mnuNew.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -61,5 +62,33 @@ public class TextEditorFormController {
                 }
             }
         });
+
+    }
+
+    public void mnuNewOnAction(ActionEvent actionEvent) {
+    }
+
+    public void mnuOpenOnAction(ActionEvent actionEvent) {
+    }
+
+    public void mnuSaveOnAction(ActionEvent actionEvent) {
+    }
+
+    public void mnuPrintOnAction(ActionEvent actionEvent) {
+    }
+
+    public void mnuCloseOnAction(ActionEvent actionEvent) {
+    }
+
+    public void mnuCutOnAction(ActionEvent actionEvent) {
+    }
+
+    public void mnuCopyOnAction(ActionEvent actionEvent) {
+    }
+
+    public void mnuPasteOnAction(ActionEvent actionEvent) {
+    }
+
+    public void mnuSelectAllOnAction(ActionEvent actionEvent) {
     }
 }

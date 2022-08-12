@@ -20,31 +20,31 @@ public class SplashNew2Controller {
 
     public void initialize(){
         Timeline timeline=new Timeline();
-        KeyFrame keyFrame1 = new KeyFrame(Duration.millis(5000), new EventHandler<ActionEvent>() {
+        KeyFrame keyFrame1 = new KeyFrame(Duration.millis(500), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 System.out.println("Initializing ...");
             }
         });
-        KeyFrame keyFrame2 = new KeyFrame(Duration.millis(5000), new EventHandler<ActionEvent>() {
+        KeyFrame keyFrame2 = new KeyFrame(Duration.millis(1000), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 System.out.println("Initializing ...2");
             }
         });
-        KeyFrame keyFrame3 = new KeyFrame(Duration.millis(5000), new EventHandler<ActionEvent>() {
+        KeyFrame keyFrame3 = new KeyFrame(Duration.millis(1500), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 System.out.println("Initializing ...3");
             }
         });
-        KeyFrame keyFrame4 = new KeyFrame(Duration.millis(5000), new EventHandler<ActionEvent>() {
+        KeyFrame keyFrame4 = new KeyFrame(Duration.millis(2000), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 System.out.println("Initializing ...4");
             }
         });
-        KeyFrame keyFrame5 = new KeyFrame(Duration.millis(5000), new EventHandler<ActionEvent>() {
+        KeyFrame keyFrame5 = new KeyFrame(Duration.millis(2500), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 URL resource=this.getClass().getResource("/view/TextEditorForm.fxml");
@@ -57,7 +57,7 @@ public class SplashNew2Controller {
                 Scene editorScene=new Scene(container);
                 Stage s = new Stage();
                 s.setScene(editorScene);
-                s.setTitle("My Second Stage");
+                s.setTitle("Simple Text Editor");
                 s.show();
 
             }

@@ -7,4 +7,6 @@ A simple JavaFX editor
 v1.0.0
 
 License
-Copyright &copy; 2022 DEP-09. All Right reserved
+Copyright &copy; 2022 DEP-09. All Right reserved.
+
+This project is licensed under the [MIT License](LICENSE.txt).
