@@ -5,6 +5,8 @@ import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.print.Printer;
+import javafx.print.PrinterJob;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -146,6 +148,22 @@ public class TextEditorFormController {
     }
 
     public void mnuPrintOnAction(ActionEvent actionEvent) {
+        if (Printer.getDefaultPrinter()==null){
+            new Alert(Alert.AlertType.ERROR,"No Default Printer Selected ..");
+            return;
+        }
+        PrinterJob printerJob = PrinterJob.createPrinterJob();
+        if (printerJob!=null){
+            printerJob.showPageSetupDialog(txtEditor.getScene().getWindow());
+            boolean success=printerJob.printPage(txtEditor);
+            if (success){
+                printerJob.endJob();
+            }else {
+                new Alert(Alert.AlertType.ERROR,"Failed to Print");
+            }
+        }else {
+            new Alert(Alert.AlertType.ERROR,"Failed to Initialize the printer");
+        }
     }
 
     public void mnuCloseOnAction(ActionEvent actionEvent) {
